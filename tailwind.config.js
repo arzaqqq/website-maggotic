@@ -6,14 +6,13 @@ module.exports = {
     "./app/Views/**/**/*.php",
     "./app/Views/**/**/**/*.php",
   ],
-  
+
   theme: {
     extend: {
       colors: {
-        'maggotic':'#1E90FF'
-      }
+        maggotic: "#1E90FF",
+      },
     },
   },
-  plugins: [],
-}
-
+  plugins: [require("daisyui")],
+};
