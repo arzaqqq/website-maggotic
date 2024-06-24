@@ -12,4 +12,13 @@ class Home extends BaseController
     {
         return view('website/beranda');
     }
+
+    public function produk(): string
+    {
+        return view('website/produk');
+    }
+
+   public function maggotech(): string{
+    return view('website/maggotech');
+   }
 }

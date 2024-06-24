@@ -1,7 +1,7 @@
 <?= $this->extend('layout/template'); ?>
 
 <?= $this->section('content'); ?>
-<div class="p-4 mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate atque consectetur excepturi asperiores
+<div class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate atque consectetur excepturi asperiores
     quibusdam ab similique a hic libero, quam exercitationem eveniet aliquid, ea ipsam rerum mollitia officiis commodi
     at ipsa optio? Eos consequatur quam est corporis optio, praesentium eveniet ipsam voluptate repellat tempore, omnis
     adipisci molestiae minima? Quae, esse! Iusto reprehenderit eligendi, alias debitis autem voluptas nam quo fugiat.
