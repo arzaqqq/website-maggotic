@@ -21,7 +21,7 @@
     <div class="flex items-center">
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="#">Beranda</a>
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="#">EcoLocator</a>
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="#">Maggotect</a>
+        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="<?= site_url('maggotech')?>">Maggotech</a>
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="<?= site_url('produk') ?>">Produk</a>
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="#">Zakatin</a>
     </div>

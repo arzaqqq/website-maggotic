@@ -17,4 +17,8 @@ class Home extends BaseController
     {
         return view('website/produk');
     }
+
+   public function maggotech(): string{
+    return view('website/maggotech');
+   }
 }
