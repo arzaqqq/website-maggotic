@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         maggotic: "#1E90FF",
+        hitam: "#2C2C2C",
       },
     },
   },

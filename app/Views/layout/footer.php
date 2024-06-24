@@ -36,7 +36,7 @@
                 </li>
                 <li class="flex items-center mb-2 ml-2">
                     <div class="garis w-0.5 h-8 bg-slate-50 align-content-center mb-3"></div>
-                    <span class="mb-3 pl-3">ssultanfauzit@gmail.com<< /span>
+                    <span class="mb-3 pl-3">ssultanfauzit@gmail.com </span>
                 </li>
 
                 <li class="flex items-center mb-2">
