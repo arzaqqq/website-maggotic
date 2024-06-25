@@ -28,4 +28,9 @@ class Home extends BaseController
     {
         return view('website/zakatin');
     }
+
+    public function testimoni(): string
+    {
+        return view('website/testimoni');
+    }
 }
