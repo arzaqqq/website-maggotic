@@ -13,18 +13,19 @@
   <div class="card bg-hitam w-96 shadow-xl">
     <figure class="px-10 pt-10">
       <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-        alt="Shoes"
+        src="<?= base_url('img/produk1.jpeg') ?>"
+        alt="Got Meat"
         class="rounded-xl" />
     </figure>
     <div class="card-body items-center text-center">
-      <h2 class="card-title">Produk 1</h2>
-      <p>Deskripsi :
-Got Meat merupakan pioner cat food tinggi protein yang
-menggunakan subtitusi maggot sebagai sumber nutrisi
-ramah lingkungan dan bahan baku seat lainnya.</p>
+      <h2 class="card-title">Goat Meat</h2>
+      <p>
+     
+          Got Meat merupakan pioner cat food tinggi protein yang
+          menggunakan subtitusi maggot sebagai sumber nutrisi
+          ramah lingkungan dan bahan baku seat lainnya.</p>
       <div class="card-actions">
-      <button class="btn bg-maggotic text-white">Buy Now</button>
+      <button class="btn bg-maggotic hover:bg-white hover:text-black text-white transform hover:duration-200 hover:scale-110">Buy Now</button>
       </div>
     </div>
   </div>
@@ -32,18 +33,18 @@ ramah lingkungan dan bahan baku seat lainnya.</p>
   <div class="card bg-hitam w-96 shadow-xl">
     <figure class="px-10 pt-10">
       <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-        alt="Shoes"
-        class="rounded-xl" />
+        src="<?= base_url('img/produk2.jpeg') ?>"
+        alt="RS Maggot Red"
+        class="rounded-xl w-full h-48" />
     </figure>
     <div class="card-body items-center text-center">
-      <h2 class="card-title">Produk 2</h2>
-      <p>Deskripsi :
+      <h2 class="card-title">RS Maggot Red</h2>
+      <p>
         RS Maggot Red Seekers produk dari Berritz merupakan
         pakan super premium untuk ikan hias, sangat cocok untuk
         treatmen/mencetak ikan kontes.</p>
       <div class="card-actions">
-      <button class="btn bg-maggotic text-white">Buy Now</button>
+      <button class="btn bg-maggotic hover:bg-white hover:text-black text-white transform hover:duration-200 hover:scale-110">Buy Now</button>
       </div>
     </div>
   </div>
@@ -51,17 +52,17 @@ ramah lingkungan dan bahan baku seat lainnya.</p>
   <div class="card bg-hitam w-96 shadow-xl">
     <figure class="px-10 pt-10">
       <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-        alt="Shoes"
-        class="rounded-xl" />
+        src="<?= base_url('img/produk3.jpeg') ?> "
+        alt="Tepung Maggot"
+        class="rounded-xl w-full h-48" />
     </figure>
     <div class="card-body items-center text-center">
-      <h2 class="card-title">Produk 3</h2>
-      <p>Deskripsi :
+      <h2 class="card-title">Tepung Maggot</h2>
+      <p>
 
-            Deskripsi Produk: Tepung Maggot Rfam Jaya Larva Lalat Hitam Bsf Organik Pakan Burung Murai Kacer Ciblek Pentet Pleci</p>
+            Tepung Maggot Rfam Jaya Larva Lalat Hitam Bsf Organik Pakan Burung Murai Kacer Ciblek Pentet Pleci</p>
       <div class="card-actions">
-        <button class="btn bg-maggotic text-white">Buy Now</button>
+        <button class="btn bg-maggotic hover:bg-white hover:text-black text-white transform hover:duration-200 hover:scale-110">Buy Now</button>
       </div>
     </div>
   </div>
@@ -75,16 +76,16 @@ ramah lingkungan dan bahan baku seat lainnya.</p>
   <div class="card bg-hitam w-96 shadow-xl">
     <figure class="px-10 pt-10">
       <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-        alt="Shoes"
-        class="rounded-xl" />
+        src="<?= base_url('img/produk4.jpeg') ?>"
+        alt="Fresh Maggot"
+        class="rounded-xl w-full h-48" />
     </figure>
     <div class="card-body items-center text-center">
-      <h2 class="card-title">Produk 4</h2>
-      <p>Deskripsi :
+      <h2 class="card-title">Fresh Maggot</h2>
+      <p>
       Fresh Maggot langsung dari peternak sebagai alternatif pakan untuk ikan dan unggas. Larva BSF memeiliki kandungan protein yang tinggi sebesar 40-50%</p>
       <div class="card-actions">
-      <button class="btn bg-maggotic text-white">Buy Now</button>
+      <button class="btn bg-maggotic hover:bg-white hover:text-black text-white transform hover:duration-200 hover:scale-110">Buy Now</button>
       </div>
     </div>
   </div>
@@ -92,17 +93,17 @@ ramah lingkungan dan bahan baku seat lainnya.</p>
   <div class="card bg-hitam w-96 shadow-xl">
     <figure class="px-10 pt-10">
       <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-        alt="Shoes"
-        class="rounded-xl" />
+        src="<?= base_url('img/produk5.jpeg') ?>"
+        alt="Maggot Kering"
+        class="rounded-xl w-full h-48" />
     </figure>
     <div class="card-body items-center text-center">
-      <h2 class="card-title">Produk 5</h2>
-      <p>Deskripsi :
+      <h2 class="card-title">Maggot Kering</h2>
+      <p>
 
         Maggot kering merupakan pakan ayam boiler terbaik dan berkualitas</p>
       <div class="card-actions">
-      <button class="btn bg-maggotic text-white">Buy Now</button>
+      <button class="btn bg-maggotic hover:bg-white hover:text-black text-white transform hover:duration-200 hover:scale-110">Buy Now</button>
       </div>
     </div>
   </div>
@@ -110,16 +111,16 @@ ramah lingkungan dan bahan baku seat lainnya.</p>
   <div class="card bg-hitam w-96 shadow-xl">
     <figure class="px-10 pt-10">
       <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-        alt="Shoes"
-        class="rounded-xl" />
+        src="<?= base_url('img/produk6.jpeg') ?>"
+        alt="Puput Maggot"
+        class="rounded-xl w-full h-48" />
     </figure>
     <div class="card-body items-center text-center">
-      <h2 class="card-title">Produk 6</h2>
-      <p>Deskripsi :
+      <h2 class="card-title">Pupuk Maggot</h2>
+      <p>
       Pupuk Maggot merupakan hasil peternak maggot berupa pupuk yang memiliki kegunaan untuk menambah kesuburan tanaman khususnya holtikultura.</p>
       <div class="card-actions">
-        <button class="btn bg-maggotic text-white">Buy Now</button>
+        <button class="btn bg-maggotic hover:bg-white hover:text-black text-white transform hover:duration-200 hover:scale-110">Buy Now</button>
       </div>
     </div>
   </div>
@@ -129,18 +130,44 @@ ramah lingkungan dan bahan baku seat lainnya.</p>
 
 <div>
 <div class="hero min-h-screen">
-  <div class="hero-content flex-col lg:flex-row-reverse px-24">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-      class="max-w-sm rounded-lg shadow-2xl mr-24" />
+  <div class="hero-content flex-col lg:flex-row-reverse px-28">
+    <div class="flex flex-col items-center">
+      <img
+        src="<?=base_url('img/produktestimoni.png')?>"
+        class="max-w-sm rounded-lg mr-24" />
+      <button class=" btn-test bg-maggotic ml-16 px-20 py-3  rounded-lg font-semibold text-white text-center hover:bg-gray-300 duration-200 hover:scale-110 hover:text-black">
+        Lihat Testimoni
+      </button>
+    </div>
     <div class="ml-20">
       <h1 class="text-4xl text-center text-black font-bold">Mari Bergabung menjadi Member 
       Maggotic</h1>
-      
-      
     </div>
   </div>
 </div>
+
+<style>
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    flex-direction: row-reverse;
+  }
+}
+
+
+</style>
+
 </div>
 
 

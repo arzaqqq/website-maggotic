@@ -24,24 +24,18 @@
 
 
                         
-                        <button class="bg-gray-300 mt-5 px-20 py-3 rounded-lg font-semibold text-black text-center mx-auto  hover:bg-maggotic duration-200 hover:scale-110 hover:text-white flex items-center justify-between w-full">
+                        <button class=" buttonPrice bg-gray-300 mt-5 px-20 py-3 rounded-lg font-semibold text-black text-center mx-auto hover:bg-maggotic duration-200 hover:scale-110 hover:text-white flex items-center justify-between w-full">
                             <div class="flex flex-col items-center w-full">
                                 <h4>Price</h4>
                                 <h4>Rp.3.000.000</h4>
                             </div>
                             <svg class="ml-4" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19.5 22C20.3284 22 21 21.3284 21 20.5C21 19.6716 20.3284 19 19.5 19C18.6716 19 18 19.6716 18 20.5C18 21.3284 18.6716 22 19.5 22Z"
-                                    fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M9.5 22C10.3284 22 11 21.3284 11 20.5C11 19.6716 10.3284 19 9.5 19C8.67157 19 8 19.6716 8 20.5C8 21.3284 8.67157 22 9.5 22Z"
-                                    fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M5 4H22L20 15H7L5 4ZM5 4C4.83333 3.33333 4 2 2 2" stroke="currentColor" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M20 15H7H5.23077C3.44646 15 2.5 15.7812 2.5 17C2.5 18.2188 3.44646 19 5.23077 19H19.5"
-                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M19.5 22C20.3284 22 21 21.3284 21 20.5C21 19.6716 20.3284 19 19.5 19C18.6716 19 18 19.6716 18 20.5C18 21.3284 18.6716 22 19.5 22Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.5 22C10.3284 22 11 21.3284 11 20.5C11 19.6716 10.3284 19 9.5 19C8.67157 19 8 19.6716 8 20.5C8 21.3284 8.67157 22 9.5 22Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5 4H22L20 15H7L5 4ZM5 4C4.83333 3.33333 4 2 2 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20 15H7H5.23077C3.44646 15 2.5 15.7812 2.5 17C2.5 18.2188 3.44646 19 5.23077 19H19.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </button>                                   
+                        </button>                                  
                 </div>
             </div>
 
@@ -51,24 +45,18 @@
                     <p class="text-center text-black mt-4 sm:mt-6 md:mt-10">
                         Magokits merupakan budidaya maggot non teknologi atau tradisional namun memiliki peluang untuk mendapatkan pendapatan tambahan yang berkelanjutan. Magokits hadir sebagai paket budidaya maggot yang lebih praktis dan hemat. Magokits menjadi sasaran untuk kamu sebagai pemula dalam membudidayakan maggot.
                     </p>
-                    <button class="bg-gray-300 mt-5 px-20 py-3 rounded-lg font-semibold text-black text-center mx-auto  hover:bg-maggotic duration-200 hover:scale-110 hover:text-white flex items-center justify-between w-full" id="btn-magokits">
-                            <div class="flex flex-col items-center w-full">
-                                <h4>Price</h4>
-                                <h4>Rp.120.000</h4>
-                            </div>
-                                <svg class="ml-4" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M19.5 22C20.3284 22 21 21.3284 21 20.5C21 19.6716 20.3284 19 19.5 19C18.6716 19 18 19.6716 18 20.5C18 21.3284 18.6716 22 19.5 22Z"
-                                            fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path
-                                             d="M9.5 22C10.3284 22 11 21.3284 11 20.5C11 19.6716 10.3284 19 9.5 19C8.67157 19 8 19.6716 8 20.5C8 21.3284 8.67157 22 9.5 22Z"
-                                            fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M5 4H22L20 15H7L5 4ZM5 4C4.83333 3.33333 4 2 2 2"              stroke="currentColor" stroke-linecap="round"
-                                                 stroke-linejoin="round" />
-                                        <path d="M20 15H7H5.23077C3.44646 15 2.5 15.7812 2.5 17C2.5 18.2188 3.44646 19 5.23077 19H19.5"
-                                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                            </button>
+                    <button class=" buttonPrice bg-gray-300 mt-5 px-20 py-3 rounded-lg font-semibold text-black text-center mx-auto hover:bg-maggotic duration-200 hover:scale-110 hover:text-white flex items-center justify-between w-full">
+                        <div class="flex flex-col items-center w-full">
+                            <h4>Price</h4>
+                            <h4>Rp.120.000</h4>
+                        </div>
+                        <svg class="ml-4" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 22C20.3284 22 21 21.3284 21 20.5C21 19.6716 20.3284 19 19.5 19C18.6716 19 18 19.6716 18 20.5C18 21.3284 18.6716 22 19.5 22Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9.5 22C10.3284 22 11 21.3284 11 20.5C11 19.6716 10.3284 19 9.5 19C8.67157 19 8 19.6716 8 20.5C8 21.3284 8.67157 22 9.5 22Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M5 4H22L20 15H7L5 4ZM5 4C4.83333 3.33333 4 2 2 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20 15H7H5.23077C3.44646 15 2.5 15.7812 2.5 17C2.5 18.2188 3.44646 19 5.23077 19H19.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
 
 
                         
@@ -77,25 +65,28 @@
   </div>
 </div>
 <!-- Modal -->
-                            <div id="myModal" class="fixed inset-0 z-10 hidden overflow-y-auto">
-                            <div class="flex items-center justify-center min-h-screen">
-                                <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-                                <span class="absolute top-0 right-0 mr-4 mt-4 cursor-pointer" onclick="closeModal()">
-                                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                                    </svg>
-                                </span>
-                     <!--Form-->
-                    <form id="orderForm" class="mt-4">
-                        <label for="productName" class="block">Nama Produk:</label>
-                        <select id="productName" name="productName" class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black">
-                            <option value="Garvabin">Garvabin</option>
-                            <option value="Magokits">Magokits</option>
-                        </select>
-                        <label for="quantity" class="block mt-4">Jumlah:</label>
-                        <input type="number" id="quantity" name="quantity" class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black" required>
-                        <button type="button" onclick="saveOrder()" class="bg-gray-300 mt-4 px-4 py-2 rounded-lg font-semibold text-black hover:bg-maggotic duration-200 hover:scale-110 hover:text-white w-full">Pesan</button>
-                    </form>
+<div id="myModal" class="fixed inset-0 z-10 hidden overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+            <span class="absolute top-0 right-0 mr-4 mt-4 cursor-pointer" onclick="closeModal()">
+                <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </span>
+            <!-- Form -->
+            <form id="orderForm" class="mt-4">
+                            <label for="productName" class="block">Nama Produk:</label>
+                            <select id="productName" name="productName" class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black">
+                                <option value="Garvabin">Garvabin</option>
+                                <option value="Magokits">Magokits</option>
+                            </select>
+                            <label for="quantity" class="block mt-4">Jumlah:</label>
+                            <input type="number" id="quantity" name="quantity" class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black" required>
+                            <button type="button" onclick="saveOrder()" class="bg-gray-300 mt-4 px-4 py-2 rounded-lg font-semibold text-black hover:bg-maggotic duration-200 hover:scale-110 hover:text-white w-full">Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
                         <style>/* Style untuk tombol close */
                             /* Style untuk tombol close */
@@ -153,57 +144,58 @@ function toggleText() {
     }
 }
 
-
+//JS ke WA
 var modal = document.getElementById("myModal");
-
-
-var btn = document.querySelector(".bg-gray-300");
-
-
+var btns = document.querySelectorAll(".buttonPrice");
 var span = document.getElementsByClassName("close")[0];
 
-
-btn.onclick = function() {
-  modal.classList.remove("hidden");
-}
-
+btns.forEach(function(btn) {
+    btn.onclick = function() {
+        modal.classList.remove("hidden");
+    }
+});
 
 span.onclick = function() {
-  modal.classList.add("hidden");
+    modal.classList.add("hidden");
 }
-
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.classList.add("hidden");
-  }
+    if (event.target == modal) {
+        modal.classList.add("hidden");
+    }
 }
-
 
 function closeModal() {
-  modal.classList.add("hidden");
+    modal.classList.add("hidden");
 }
-
 
 function saveOrder() {
     var productName = document.getElementById('productName').value;
     var quantity = document.getElementById('quantity').value;
-    
+    var price = 0;
+
+    if (productName === "Garvabin") {
+        price = 3000000; // Harga untuk Garvabin
+    } else if (productName === "Magokits") {
+        price = 120000; // Harga untuk Magokits
+    }
+
+    var totalPrice = price * quantity;
+
+    console.log('Product Name:', productName);
+    console.log('Quantity:', quantity);
+    console.log('Total Price:', totalPrice);
+
     localStorage.setItem('productName', productName);
     localStorage.setItem('quantity', quantity);
+    localStorage.setItem('totalPrice', totalPrice);
     
- 
-    var message = 'Halo, saya ingin memesan ' + quantity + ' ' + productName;
-    window.open('https://wa.me/+6281391546240?text=' + encodeURIComponent(message));
+    var message = 'Halo, saya ingin memesan ' + quantity + ' ' + productName + '. Total harga: Rp' + totalPrice;
+    window.open('https://wa.me/+6281391546240?text=' + encodeURIComponent(message), '_blank');
     
-   
     closeModal();
 }
 
-function closeModal() {
-    var modal = document.getElementById('myModal');
-    modal.classList.add('hidden');
-}
 
 
 //Modal Price 120.000
