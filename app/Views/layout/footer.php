@@ -3,6 +3,8 @@
         <div class="w-full lg:w-[40%] mb-8 lg:mb-0">
             <h2 class="font-bold text-xl mb-4">Web Maggotic</h2>
             <p class="mb-4 text-justify">
+
+
                 Maggotic merupakan sebuah aplikasi yang menjadi inovasi platform pemasaran maggot bsf berbasis syariah.
                 Maggotic juga hadir dalam membantu pemerintah dan masyarakat untuk mendapatkan pendapatan tambahan
                 melalui sampah organik, pengembangan model budidaya maggot bsf, dan meningkatkan penjualan hasil ternak
