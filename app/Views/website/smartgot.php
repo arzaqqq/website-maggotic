@@ -5,7 +5,7 @@
     <h1>Berita Maggot</h1>
 </div>
 
-<div class="container mx-auto mt-8">
+<div class="container mx-auto mt-8 px-4">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <!-- Card 1 -->
         <div class="card bg-base-100 w-full h-[542px] shadow-lg">
