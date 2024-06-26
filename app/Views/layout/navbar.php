@@ -5,11 +5,11 @@
     }
 }
 </style>
-<nav class="text-white bg-maggotic py-3 px-4 flex items-center justify-between">
+<nav class="text-white bg-maggotic py-3 px-6 flex items-center justify-between">
 
     <div class="flex">
-        <a class="font-bold text-xl tracking-tight me-5" href="#">Maggotic</a>
-        <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+        <a class="font-bold text-2xl tracking-tight me-5" href="#">Maggotic</a>
+        <svg width="35" height="35" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M19.5 22C20.3284 22 21 21.3284 21 20.5C21 19.6716 20.3284 19 19.5 19C18.6716 19 18 19.6716 18 20.5C18 21.3284 18.6716 22 19.5 22Z"
@@ -26,19 +26,19 @@
 
     <div class="menu-navbar md:flex items-center">
         <!-- Hide on mobile -->
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/">Beranda</a>
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/ecolocator">EcoLocator</a>
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/smartgot">Smartgot</a>
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/maggotech">Maggotech</a>
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/produk">Produk</a>
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/zakatin">Zakatin</a>
+        <a class="text-md px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/">Beranda</a>
+        <a class="text-md px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/ecolocator">EcoLocator</a>
+        <a class="text-md px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/smartgot">Smartgot</a>
+        <a class="text-md px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/maggotech">Maggotech</a>
+        <a class="text-md px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/produk">Produk</a>
+        <a class="text-md px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/zakatin">Zakatin</a>
     </div>
 
     <!-- Toggler Icon -->
     <div class="md:hidden flex items-center">
         <button id="menu-toggle"
-            class="focus:outline-none flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
-            <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            class="focus:outline-none flex items-center px-3 py-2 border-2 rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
