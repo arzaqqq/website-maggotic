@@ -49,7 +49,7 @@
 
 <!-- Mobile Menu -->
 <div id="mobile-menu"
-    class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-75 z-50 overflow-y-auto hidden">
+    class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-85 z-50 overflow-y-auto hidden">
     <div class="flex justify-end pt-4 pr-4">
         <button id="close-menu" class="text-gray-300 focus:outline-none">
             <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
