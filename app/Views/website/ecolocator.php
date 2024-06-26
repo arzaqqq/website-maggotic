@@ -4,7 +4,7 @@
 
 <div class="flex flex-col items-center mt-20 mb-10">
     <h1 class="text-maggotic font-bold text-3xl mb-4">MAGGOTIC</h1>
-    <p class="text-center mx-16 text-[24px]">Di sini, Anda dapat menemukan lokasi pengepul sampah yang khusus
+    <p class="text-center mx-16 text-[24px] text-black">Di sini, Anda dapat menemukan lokasi pengepul sampah yang khusus
         mengumpulkan makanan
         manggot. Jelajahi peta dan
         temukan daerah-daerah di mana Anda dapat berkontribusi dalam menjaga lingkungan dengan mendaur ulang sisa
@@ -14,7 +14,7 @@
 <div class="container mx-auto flex flex-col items-center">
     <div class="relative mb-4">
         <select id="regionDropdown"
-            class="appearance-none rounded py-4 ps-5 pe-10 border-2 border-blue-600 focus:outline-none pr-8">
+            class=" bg-white text-black appearance-none rounded py-4 ps-5 pe-10 border-2 border-blue-600 focus:outline-none pr-8">
             <option value="sumatera_barat" selected>Sumatera Barat</option>
             <option value="aceh">Aceh</option>
             <option value="sumatera_utara">Sumatera Utara</option>
@@ -24,7 +24,8 @@
                 alt="sort-down" />
         </div>
     </div>
-    <div id="locations" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 cursor-pointer mb-24  lg:w-[970px]">
+    <div id="locations"
+        class="text-black grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 cursor-pointer mb-24  lg:w-[1100px]">
     </div>
 </div>
 
@@ -132,7 +133,7 @@ function displayLocations(region) {
     if (region && locations[region]) {
         locations[region].forEach(location => {
             const locationCard = `
-                <div class="border rounded p-4">
+                <div class="border-2 shadow-lg text-center my-auto rounded p-4 lg:mx-2">
                     <h3 class="text-lg font-bold">${location.name}</h3>
                     <p>${location.address}</p>
                     <p>${location.phone}</p>
