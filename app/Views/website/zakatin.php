@@ -12,7 +12,7 @@
 <!-- Header dan Logo Testimoni End -->
 
 <!-- Card Zakat Start-->
-<div class="container mx-auto px-8 flex flex-wrap ">
+<div class="container mx-auto px-9 flex flex-wrap ">
     <!-- Card 1 -->
     <div class="card lg:card-side bg-base-100 shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat1.png" alt="Album" />
