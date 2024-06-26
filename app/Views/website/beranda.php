@@ -10,7 +10,7 @@
 <div class="container mx-auto">
     <div class="flex justify-center align-content-enter">
         <div class="w-[40%] my-auto text-center">
-            <h2 class="text-[25px] font-bold">Selamat Datang di website Maggotic</h2>
+            <h2 class="text-[25px] font-bold text-black">Selamat Datang di website Maggotic</h2>
             <p class="text-[25px]">Sebuah platform yang dirancang untuk tempat di mana kami menggabungkan keajaiban
                 maggot dengan inovasi
                 teknologi. Temukan berbagai informasi tentang penjualan maggot, teknologi terkini, dan solusi

@@ -22,7 +22,7 @@
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/">Beranda</a>
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/ecolocator">EcoLocator</a>
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/smartgot">Smartgot</a>
-        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/maggotect">Maggotect</a>
+        <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/maggotech">Maggotech</a>
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/produk">Produk</a>
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/zakatin">Zakatin</a>
     </div>

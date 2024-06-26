@@ -7,7 +7,7 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'home::beranda');
 $routes->get('ecolocator', 'home::ecolocator');
-$routes->get('maggotect', 'home::maggotect');
+$routes->get('maggotech', 'home::maggotech');
 $routes->get('produk', 'home::produk');
 $routes->get('zakatin', 'home::zakatin');
 $routes->get('smartgot', 'home::smartgot');

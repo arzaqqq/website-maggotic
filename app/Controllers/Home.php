@@ -12,9 +12,9 @@ class Home extends BaseController
     {
         return view('website/ecolocator');
     }
-    public function maggotect(): string
+    public function maggotech(): string
     {
-        return view('website/maggotect');
+        return view('website/maggotech');
     }
     public function smartgot(): string
     {
