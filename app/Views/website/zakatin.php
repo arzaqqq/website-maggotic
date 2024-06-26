@@ -14,7 +14,7 @@
 <!-- Card Zakat Start-->
 <div class="container mx-auto px-9 flex flex-wrap ">
     <!-- Card 1 -->
-    <div class="card lg:card-side bg-base-100 shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat1.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Penyandang Disabilitas</h2>
@@ -24,14 +24,14 @@
             <div class="card-actions justify-center">
                 <a href="https://kitabisa.com/campaign/pakasriry?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
                     target="_blank"
-                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 hover:scale-110 active:bg-blue-400 rounded-xl text-white">Donasi</a>
             </div>
         </div>
     </div>
     <!-- Card 1 End -->
 
     <!-- Card 2 -->
-    <div class="card lg:card-side bg-base-100 shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat2.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Panti Asuhan</h2>
@@ -41,14 +41,14 @@
             <div class="card-actions justify-center">
                 <a href="https://kitabisa.com/campaign/pantiasuhannurulfalah?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
                     target="_blank"
-                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 hover:scale-110 active:bg-blue-400 rounded-xl text-white">Donasi</a>
             </div>
         </div>
     </div>
     <!-- Card 2 End -->
 
     <!-- Card 3 -->
-    <div class="card lg:card-side bg-base-100 shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat3.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Kebakaran Pasar</h2>
@@ -57,14 +57,14 @@
             <div class="card-actions justify-center">
                 <a href="https://kitabisa.com/campaign/ambenganterbakar?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
                     target="_blank"
-                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 hover:scale-110 active:bg-blue-400 rounded-xl text-white">Donasi</a>
             </div>
         </div>
     </div>
     <!-- Card 3 End -->
 
     <!-- Card 4  -->
-    <div class="card lg:card-side bg-base-100 shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat4.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Gempa</h2>
@@ -73,14 +73,14 @@
             <div class="card-actions justify-center">
                 <a href="https://kitabisa.com/campaign/gempagarut?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
                     target="_blank"
-                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 hover:scale-110 active:bg-blue-400 rounded-xl text-white">Donasi</a>
             </div>
         </div>
     </div>
     <!-- Card 4 End -->
 
     <!-- Card 5 -->
-    <div class="card lg:card-side bg-base-100 shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat5.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Anak Yatim</h2>
@@ -89,14 +89,14 @@
             <div class="card-actions justify-center">
                 <a href="https://kitabisa.com/campaign/bahagiakandiridenganberbagimakanananakyatim?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
                     target="_blank"
-                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 hover:scale-110 active:bg-blue-400 rounded-xl text-white">Donasi</a>
             </div>
         </div>
     </div>
     <!-- Card 5 End -->
 
     <!-- Card 6 -->
-    <div class="card lg:card-side bg-base-100 shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat6.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Kaum Dhuafa</h2>
@@ -105,7 +105,7 @@
             <div class="card-actions justify-center">
                 <a href="https://kitabisa.com/campaign/sedekahdagingpenuhigizikaumdhuafa?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
                     target="_blank"
-                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 hover:scale-110 active:bg-blue-400 rounded-xl text-white">Donasi</a>
             </div>
         </div>
     </div>
