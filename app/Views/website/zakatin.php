@@ -14,7 +14,7 @@
 <!-- Card Zakat Start-->
 <div class="container mx-auto px-9 flex flex-wrap ">
     <!-- Card 1 -->
-    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-white border text-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat1.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Penyandang Disabilitas</h2>
@@ -31,7 +31,7 @@
     <!-- Card 1 End -->
 
     <!-- Card 2 -->
-    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-white border text-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat2.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Panti Asuhan</h2>
@@ -48,7 +48,7 @@
     <!-- Card 2 End -->
 
     <!-- Card 3 -->
-    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-white border text-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat3.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Kebakaran Pasar</h2>
@@ -64,7 +64,7 @@
     <!-- Card 3 End -->
 
     <!-- Card 4  -->
-    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-white border text-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat4.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Gempa</h2>
@@ -80,7 +80,7 @@
     <!-- Card 4 End -->
 
     <!-- Card 5 -->
-    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-white border text-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat5.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Anak Yatim</h2>
@@ -96,7 +96,7 @@
     <!-- Card 5 End -->
 
     <!-- Card 6 -->
-    <div class="card lg:card-side bg-hitam shadow-sm w-2/4 mb-20">
+    <div class="card lg:card-side bg-white border text-hitam shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat6.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Kaum Dhuafa</h2>
