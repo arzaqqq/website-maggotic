@@ -14,25 +14,28 @@
 
 <!-- Card Testimoni Start -->
 <div class="md:container md:mx-auto">
-    <!-- Card 1 -->
-    <div class="custom-card w-11/12 h-96 bg-gray-300 flex items-center justify-center mx-auto rounded-md mb-20">
-        <img src="../img/sinta.png" alt="Kak Sinta" class="w-72 h-72 object-cover mr-8">
-        <!-- Konten di sebelah kanan -->
-        <div class="flex flex-col justify-center w-2/3">
-            <h2 class="text-xl font-bold mb-8 ml-12">Testimoni Pelanggan</h2>
-            <p class="text-4xl font-bold mb-8 ml-12 text-[#1E90FF]">Kak Sinta</p>
-            <p class="text-base leading-relaxed mb-4 ml-12">“Platfrom maggotic benar-benar membantu saya dalam menemukan maggot berkualitas. pelayanan juga ramah dan sangat praktis, jangan lupa berlangganan ke maggotic, dan kurangi limbah makanan”</p>
-        </div>
-    </div>
 
-    <!-- Card 2 -->
-    <div class="custom-card w-11/12 h-96 bg-gray-300 flex items-center justify-center mx-auto rounded-md mb-20">
-        <img src="../img/kamal.png" alt="Bang Kamal" class="w-72 h-72 object-cover mr-8">
-        <!-- Konten di sebelah kanan -->
-        <div class="flex flex-col justify-center w-2/3">
-            <h2 class="text-xl font-bold mb-8 ml-12">Testimoni Pelanggan Seorang Peternak Ayam Boiler</h2>
-            <p class="text-4xl font-bold mb-8 ml-12 text-[#1E90FF]">Bang Kamal</p>
-            <p class="text-base leading-relaxed mb-4 ml-12">“Salam sehat untuk semua! Saya, Kamal, pemilik peternakan ayam boiler, ingin berbagi pengalaman positif saya dengan Maggotic. Sebagai seorang peternak, saya selalu mencari pakan berkualitas untuk ayam-ayam saya. Dan inilah mengapa saya memutuskan untuk mencoba maggot sebagai salah satu opsi pakan. jangan ragu untuk memakasi maggotic”</p>
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1">
+        <!-- Card 1 -->
+        <div class="custom-card w-11/12 h-96 bg-gray-300 flex items-center justify-center mx-auto rounded-md mb-20">
+            <img src="../img/sinta.png" alt="Kak Sinta" class="w-72 h-72 object-cover mr-8">
+            <!-- Konten di sebelah kanan -->
+            <div class="flex flex-col justify-center w-2/3">
+                <h2 class="text-xl font-bold mb-8 ml-12">Testimoni Pelanggan</h2>
+                <p class="text-4xl font-bold mb-8 ml-12 text-[#1E90FF]">Kak Sinta</p>
+                <p class="text-base leading-relaxed mb-4 ml-12">“Platfrom maggotic benar-benar membantu saya dalam menemukan maggot berkualitas. pelayanan juga ramah dan sangat praktis, jangan lupa berlangganan ke maggotic, dan kurangi limbah makanan”</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="custom-card w-11/12 h-96 bg-gray-300 flex items-center justify-center mx-auto rounded-md mb-20">
+            <img src="../img/kamal.png" alt="Bang Kamal" class="w-72 h-72 object-cover mr-8">
+            <!-- Konten di sebelah kanan -->
+            <div class="flex flex-col justify-center w-2/3">
+                <h2 class="text-xl font-bold mb-8 ml-12">Testimoni Pelanggan Seorang Peternak Ayam Boiler</h2>
+                <p class="text-4xl font-bold mb-8 ml-12 text-[#1E90FF]">Bang Kamal</p>
+                <p class="text-base leading-relaxed mb-4 ml-12">“Salam sehat untuk semua! Saya, Kamal, pemilik peternakan ayam boiler, ingin berbagi pengalaman positif saya dengan Maggotic. Sebagai seorang peternak, saya selalu mencari pakan berkualitas untuk ayam-ayam saya. Dan inilah mengapa saya memutuskan untuk mencoba maggot sebagai salah satu opsi pakan. jangan ragu untuk memakasi maggotic”</p>
+            </div>
         </div>
     </div>
 </div>

@@ -21,7 +21,7 @@
             <p class="text-base text-center">Mari berzakat untuk saudara-saudara penyandang disabilitas. Setiap bantuan kita berarti bagi mereka.</p>
             <p class="text-base mt-4 text-center">Lokasi : Padang, Kota tua</p>
             <div class="card-actions justify-center">
-                <a href="https://kitabisa.com/campaign/pangankeanakpelosok?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                <a href="https://kitabisa.com/campaign/pakasriry?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
             <p class="text-base text-center">Mari berbagi kebahagiaan dengan anak-anak di panti asuhan. Setiap donasi kita memberikan harapan dan cinta bagi mereka.</p>
             <p class="text-base mt-4 text-center">Lokasi : Bukit Tinggi</p>
             <div class="card-actions justify-center">
-                <button class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</button>
+                <a href="https://kitabisa.com/campaign/pantiasuhannurulfalah?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
             <p class="text-base text-center">Mari berdonasi untuk saudara-saudara yang mendapat musibah kebakaran.</p>
             <p class="text-base mt-4 text-center">Lokasi : Pasar Kota</p>
             <div class="card-actions justify-center">
-                <button class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</button>
+                <a href="https://kitabisa.com/campaign/ambenganterbakar?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@
             <p class="text-base text-center">Mari berbagi sedikit rezeki kepada korban gempa.</p>
             <p class="text-base mt-4 text-center">Lokasi : Padang</p>
             <div class="card-actions justify-center">
-                <button class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</button>
+                <a href="https://kitabisa.com/campaign/gempagarut?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@
             <p class="text-base text-center">Berbagi rezeki untuk anak yatim dipanti asuhan ceria.</p>
             <p class="text-base mt-4 text-center">Lokasi : Payukumbuh</p>
             <div class="card-actions justify-center">
-                <button class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</button>
+                <a href="https://kitabisa.com/campaign/bahagiakandiridenganberbagimakanananakyatim?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -91,7 +91,7 @@
             <p class="text-base text-center">Mari berbagi sedikit rezeki kepada kaum dhuafa..</p>
             <p class="text-base mt-4 text-center">Lokasi : Solok</p>
             <div class="card-actions justify-center">
-                <button class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</button>
+                <a href="https://kitabisa.com/campaign/sedekahdagingpenuhigizikaumdhuafa?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
