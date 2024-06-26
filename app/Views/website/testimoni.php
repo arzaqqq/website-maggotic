@@ -49,6 +49,7 @@
         <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-blue-500 hover:bg-blue-50">Next</a>
     </nav>
 </div>
+<!-- Pagination End -->
 
 
 <?= $this->endsection('content'); ?>
