@@ -12,16 +12,19 @@
 <!-- Header dan Logo Testimoni End -->
 
 <!-- Card Zakat Start-->
-<div class="container mx-auto px-8 flex flex-wrap justify-between">
+<div class="container mx-auto px-8 flex flex-wrap ">
     <!-- Card 1 -->
     <div class="card lg:card-side bg-base-100 shadow-sm w-2/4 mb-20">
         <img class="w-80 h-72" src="../img/zakat1.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Penyandang Disabilitas</h2>
-            <p class="text-base text-center">Mari berzakat untuk saudara-saudara penyandang disabilitas. Setiap bantuan kita berarti bagi mereka.</p>
+            <p class="text-base text-center">Mari berzakat untuk saudara-saudara penyandang disabilitas. Setiap bantuan
+                kita berarti bagi mereka.</p>
             <p class="text-base mt-4 text-center">Lokasi : Padang, Kota tua</p>
             <div class="card-actions justify-center">
-                <a href="https://kitabisa.com/campaign/pakasriry?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                <a href="https://kitabisa.com/campaign/pakasriry?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
+                    target="_blank"
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -32,10 +35,13 @@
         <img class="w-80 h-72" src="../img/zakat2.png" alt="Album" />
         <div class="card-body flex flex-col justify-between px-5 py-4">
             <h2 class="card-title font-bold text-lg justify-center">Panti Asuhan</h2>
-            <p class="text-base text-center">Mari berbagi kebahagiaan dengan anak-anak di panti asuhan. Setiap donasi kita memberikan harapan dan cinta bagi mereka.</p>
+            <p class="text-base text-center">Mari berbagi kebahagiaan dengan anak-anak di panti asuhan. Setiap donasi
+                kita memberikan harapan dan cinta bagi mereka.</p>
             <p class="text-base mt-4 text-center">Lokasi : Bukit Tinggi</p>
             <div class="card-actions justify-center">
-                <a href="https://kitabisa.com/campaign/pantiasuhannurulfalah?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                <a href="https://kitabisa.com/campaign/pantiasuhannurulfalah?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
+                    target="_blank"
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -49,7 +55,9 @@
             <p class="text-base text-center">Mari berdonasi untuk saudara-saudara yang mendapat musibah kebakaran.</p>
             <p class="text-base mt-4 text-center">Lokasi : Pasar Kota</p>
             <div class="card-actions justify-center">
-                <a href="https://kitabisa.com/campaign/ambenganterbakar?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                <a href="https://kitabisa.com/campaign/ambenganterbakar?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
+                    target="_blank"
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -63,7 +71,9 @@
             <p class="text-base text-center">Mari berbagi sedikit rezeki kepada korban gempa.</p>
             <p class="text-base mt-4 text-center">Lokasi : Padang</p>
             <div class="card-actions justify-center">
-                <a href="https://kitabisa.com/campaign/gempagarut?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                <a href="https://kitabisa.com/campaign/gempagarut?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
+                    target="_blank"
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -77,7 +87,9 @@
             <p class="text-base text-center">Berbagi rezeki untuk anak yatim dipanti asuhan ceria.</p>
             <p class="text-base mt-4 text-center">Lokasi : Payukumbuh</p>
             <div class="card-actions justify-center">
-                <a href="https://kitabisa.com/campaign/bahagiakandiridenganberbagimakanananakyatim?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                <a href="https://kitabisa.com/campaign/bahagiakandiridenganberbagimakanananakyatim?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
+                    target="_blank"
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -91,7 +103,9 @@
             <p class="text-base text-center">Mari berbagi sedikit rezeki kepada kaum dhuafa..</p>
             <p class="text-base mt-4 text-center">Lokasi : Solok</p>
             <div class="card-actions justify-center">
-                <a href="https://kitabisa.com/campaign/sedekahdagingpenuhigizikaumdhuafa?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign" target="_blank" class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
+                <a href="https://kitabisa.com/campaign/sedekahdagingpenuhigizikaumdhuafa?utm_source=socialsharing_donor_web_null&utm_medium=share_campaign_copas&utm_campaign=share_detail_campaign"
+                    target="_blank"
+                    class="btn bg-[#1E90FF] hover:bg-blue-700 active:bg-blue-400 rounded-full text-white">Donasi</a>
             </div>
         </div>
     </div>
@@ -103,11 +117,16 @@
 <div class="flex justify-center mt-4 mb-16
 ">
     <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
-        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-blue-500 hover:bg-blue-50">Previous</a>
-        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">1</a>
-        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">2</a>
-        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">3</a>
-        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-blue-500 hover:bg-blue-50">Next</a>
+        <a href="#"
+            class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-blue-500 hover:bg-blue-50">Previous</a>
+        <a href="#"
+            class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">1</a>
+        <a href="#"
+            class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">2</a>
+        <a href="#"
+            class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">3</a>
+        <a href="#"
+            class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-blue-500 hover:bg-blue-50">Next</a>
     </nav>
 </div>
 <!-- Pagination End -->

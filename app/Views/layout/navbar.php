@@ -1,4 +1,11 @@
-<nav class="text-white bg-maggotic  py-3 px-4 flex items-center justify-between">
+<style>
+@media(max-width:800px) {
+    .menu-navbar {
+        display: none;
+    }
+}
+</style>
+<nav class="text-white bg-maggotic py-3 px-4 flex items-center justify-between">
 
     <div class="flex">
         <a class="font-bold text-xl tracking-tight me-5" href="#">Maggotic</a>
@@ -15,10 +22,10 @@
             <path d="M20 15H7H5.23077C3.44646 15 2.5 15.7812 2.5 17C2.5 18.2188 3.44646 19 5.23077 19H19.5"
                 stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-
     </div>
 
-    <div class="flex items-center">
+    <div class="menu-navbar md:flex items-center">
+        <!-- Hide on mobile -->
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/">Beranda</a>
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/ecolocator">EcoLocator</a>
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/smartgot">Smartgot</a>
@@ -26,4 +33,49 @@
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/produk">Produk</a>
         <a class="text-sm px-4 py-2 leading-none rounded-full hover:bg-gray-700" href="/zakatin">Zakatin</a>
     </div>
+
+    <!-- Toggler Icon -->
+    <div class="md:hidden flex items-center">
+        <button id="menu-toggle"
+            class="focus:outline-none flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+            <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+
 </nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu"
+    class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-75 z-50 overflow-y-auto hidden">
+    <div class="flex justify-end pt-4 pr-4">
+        <button id="close-menu" class="text-gray-300 focus:outline-none">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="flex flex-col items-center justify-center h-full">
+        <a class="text-gray-300 py-2 px-4 block hover:text-white" href="/">Beranda</a>
+        <a class="text-gray-300 py-2 px-4 block hover:text-white" href="/ecolocator">EcoLocator</a>
+        <a class="text-gray-300 py-2 px-4 block hover:text-white" href="/smartgot">Smartgot</a>
+        <a class="text-gray-300 py-2 px-4 block hover:text-white" href="/maggotech">Maggotech</a>
+        <a class="text-gray-300 py-2 px-4 block hover:text-white" href="/produk">Produk</a>
+        <a class="text-gray-300 py-2 px-4 block hover:text-white" href="/zakatin">Zakatin</a>
+    </div>
+</div>
+
+<script>
+// Toggle mobile menu
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+});
+
+// Close mobile menu
+document.getElementById('close-menu').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.add('hidden');
+});
+</script>

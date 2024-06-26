@@ -2,9 +2,13 @@
 
 <?= $this->section('content'); ?>
 
-<div class="flex flex-col items-center mt-20 mb-10">
-    <h1 class="text-maggotic font-bold text-3xl mb-4">MAGGOTIC</h1>
-    <p class="text-center mx-16 text-[24px] text-black">Di sini, Anda dapat menemukan lokasi pengepul sampah yang khusus
+<div class="flex flex-col items-center mb-10">
+    <div class="text-center">
+        <img src="../img/logo.png" alt="logo" class="mx-auto  mt-8 w-[500px] h-[102px] t-[152px] l-[470px]">
+    </div>
+
+    <p class="text-center mx-16 lg:text-[24px] text-black">Di sini, Anda dapat menemukan lokasi pengepul sampah yang
+        khusus
         mengumpulkan makanan
         manggot. Jelajahi peta dan
         temukan daerah-daerah di mana Anda dapat berkontribusi dalam menjaga lingkungan dengan mendaur ulang sisa
@@ -14,7 +18,7 @@
 <div class="container mx-auto flex flex-col items-center">
     <div class="relative mb-4">
         <select id="regionDropdown"
-            class=" bg-white text-black appearance-none rounded py-4 ps-5 pe-10 border-2 border-blue-600 focus:outline-none pr-8">
+            class=" bg-white text-black appearance-none rounded mb-6 py-4 ps-5 pe-10 border-2 border-blue-600 focus:outline-none pr-8">
             <option value="sumatera_barat" selected>Sumatera Barat</option>
             <option value="aceh">Aceh</option>
             <option value="sumatera_utara">Sumatera Utara</option>
@@ -133,11 +137,12 @@ function displayLocations(region) {
     if (region && locations[region]) {
         locations[region].forEach(location => {
             const locationCard = `
-                <div class="border-2 shadow-lg text-center my-auto rounded p-4 lg:mx-2">
-                    <h3 class="text-lg font-bold">${location.name}</h3>
-                    <p>${location.address}</p>
-                    <p>${location.phone}</p>
+                <div class="border-2 shadow-lg text-center my-auto rounded p-4 lg:mx-2 transition duration-300 ease-in-out transform hover:shadow-2xl hover:scale-105">
+                   <h3 class="text-lg font-bold">${location.name}</h3>
+                   <p>${location.address}</p>
+                   <p>${location.phone}</p>
                 </div>
+
             `;
             locationContainer.append(locationCard);
         });
