@@ -153,35 +153,34 @@
 
         <!-- Modal -->
         <div id="myModal" class="fixed inset-0 z-10 hidden overflow-y-auto">
-            <div class="flex items-center justify-center min-h-screen">
-                <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-                    <span class="close absolute top-0 right-0 mr-4 mt-4 cursor-pointer" onclick="closeModal()">
-                        <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </span>
-
-                    <!-- Form Produk Olahan -->
-                    <form id="orderForm" class="mt-4">
-                        <label for="productName" class="block">Nama Produk Olahan</label>
-                        <select name="productName" id="productName"
-                            class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black">
-                            <option value="Got Meat">Got Meat</option>
-                            <option value="RS Maggot Red">RS Maggot Red</option>
-                            <option value="Tepung Maggot">Tepung Maggot</option>
-                        </select>
-                        <label for="quantity" class="block mt-4">Jumlah :</label>
-                        <input type="number" id="quantity" name="quantity"
-                            class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black" required>
-                        <div id="totalPrice" class="mt-2 text-black font-bold"></div>
-                        <button type="button" onclick="saveOrder()"
-                            class="bg-gray-300 mt-4 px-4 py-2 rounded-lg font-semibold text-black hover:bg-maggotic duration-200 hover:scale-110 hover:text-white w-full">Pesan</button>
-                    </form>
-                </div>
-            </div>
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+            <form id="orderForm" class="mt-4 relative">
+                <span class="close absolute top-0 right-0 mr-0 -mt-4 cursor-pointer" onclick="closeModal()">
+                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </span>
+                <label for="productName" class="block">Nama Produk Olahan</label>
+                <select name="productName" id="productName"
+                    class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black">
+                    <option value="Got Meat">Got Meat</option>
+                    <option value="RS Maggot Red">RS Maggot Red</option>
+                    <option value="Tepung Maggot">Tepung Maggot</option>
+                </select>
+                <label for="quantity" class="block mt-4">Jumlah :</label>
+                <input type="number" id="quantity" name="quantity"
+                    class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black" required>
+                <div id="totalPrice" class="mt-2 text-black font-bold"></div>
+                <button type="button" onclick="saveOrder()"
+                    class="bg-gray-300 mt-4 px-4 py-2 rounded-lg font-semibold text-black hover:bg-maggotic duration-200 hover:scale-110 hover:text-white w-full">Pesan</button>
+            </form>
         </div>
+    </div>
+</div>
+
     </div>
 
 
@@ -211,7 +210,8 @@
     <div id="myModal2" class="fixed inset-0 z-10 hidden overflow-y-auto">
         <div class="flex items-center justify-center min-h-screen">
             <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-                <span class="close absolute top-0 right-0 mr-4 mt-4 cursor-pointer" onclick="closeModal2()">
+            <form id="orderForm2" class="mt-4 relative">
+                <span class="close absolute top-0 right-0 mr-0 -mt-4 cursor-pointer" onclick="closeModal2()">
                     <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
@@ -220,7 +220,7 @@
                 </span>
 
                 <!-- Form Produk Olahan -->
-                <form id="orderForm2" class="mt-4">
+               
                     <label for="productName2" class="block">Nama Produk Olahan</label>
                     <select name="productName" id="productName2"
                         class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black">

@@ -2,11 +2,11 @@
 <?= $this->section('content'); ?>
 
 
-<div style="display: flex; justify-content: center; align-items: center; height: 200px;" class="p-10 my-20"  >
-    <img src="<?= base_url('img/maggotic.png') ?>" alt="Logo" class="-mt-20 ">
+<div style="display: flex; justify-content: center; align-items: center; height: 200px;" class="p-10 my-20 "  >
+    <img src="<?= base_url('img/maggotic.png') ?>" alt="Logo" class="-mt-32 ">
 </div>
 
-<div class="items-center px-4 sm:px-8 md:px-16 py-4 -mt-16 mb-20">
+<div class="items-center px-4 sm:px-8 md:px-16 py-4 -mt-32 mb-20">
     <div class="bg-maggotic mx-auto py-10 sm:py-40 md:py-60 lg:py-36 px-10 sm:px-20 md:px-40 lg:px-60 rounded-lg">
         <div class="flex flex-col mt-20 md:flex-row gap-8">
             
@@ -68,13 +68,14 @@
 <div id="myModal" class="fixed inset-0 z-10 hidden overflow-y-auto">
     <div class="flex items-center justify-center min-h-screen">
         <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-            <span class="absolute top-0 right-0 mr-4 mt-4 cursor-pointer" onclick="closeModal()">
+        <form id="orderForm" class="mt-4 relative">
+            <span class="absolute top-0 right-0 mr-0 -mt-4 cursor-pointer" onclick="closeModal()">
                 <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </span>
             <!-- Form -->
-            <form id="orderForm" class="mt-4">
+        
                             <label for="productName" class="block">Nama Produk:</label>
                             <select id="productName" name="productName" class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black">
                                 <option value="Garvabin">Garvabin</option>
