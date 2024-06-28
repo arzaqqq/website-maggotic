@@ -12,19 +12,20 @@
     <div class="flex flex-col lg:flex-row justify-center align-content-enter">
         <div class="lg:w-[40%] my-auto text-center lg:px-1 px-6">
             <h2 class="text-[25px] font-bold text-black">Selamat Datang di website Maggotic</h2>
-            <p class="text-[25px] text-slate-700 mb-20">Sebuah platform yang dirancang untuk tempat di mana kami menggabungkan
+            <p class="text-[25px]  text-slate-700">Sebuah platform yang dirancang untuk tempat di mana
+                kami menggabungkan
                 keajaiban
                 maggot dengan inovasi
                 teknologi. Temukan berbagai informasi tentang penjualan maggot, teknologi terkini, dan solusi
                 berkelanjutan.
             </p>
-            <a href="<?= base_url('produk'); ?>"
-                class="bg-maggotic text-white text-1xl rounded-full px-9 py-3 transition duration-300 ease-in-out transform hover:bg-blue-600 focus:bg-blue-700 active:bg-blue-800 hover:scale-105 focus:scale-105 active:scale-95">
+          <a href="<?= base_url('produk')?>"> <button
+                class="bg-maggotic text-white text-1xl rounded-full px-9 py-3 mt-3 mb-6 transition duration-300 ease-in-out transform hover:bg-blue-600 focus:bg-blue-700 active:bg-blue-800 hover:scale-105 focus:scale-105 active:scale-95">
                 Produk
-            </a>
+            </button> </a> 
 
         </div>
-        <div class="lg:w-[40%] flex justify-center ">
+        <div class="lg:w-[40%] flex justify-center px-6">
             <img src="/img/foto-maggot.png" alt="Foto Maggot" class="">
         </div>
     </div>

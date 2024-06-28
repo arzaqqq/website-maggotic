@@ -14,6 +14,7 @@
     body {
         font-family: "Poppins", sans-serif;
         background-color: white;
+        padding-top: 56px;
     }
     </style>
 </head>

@@ -13,6 +13,11 @@ module.exports = {
         maggotic: "#1E90FF",
         hitam: "#2C2C2C",
       },
+      screens: {
+        xs: "480px",
+        xxs: "360px",
+        xxxs: "320px",
+      },
     },
   },
   plugins: [require("daisyui")],

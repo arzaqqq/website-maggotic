@@ -129,7 +129,7 @@
 
 <div>
     <div class="hero min-h-screen flex items-center justify-center">
-        <div class="hero-content flex-col lg:flex-row-reverse px-28 max-w-6xl mx-auto">
+        <div class="hero-content flex-col lg:flex-row-reverse max-w-6xl mx-auto">
             <div class="flex flex-col items-center lg:items-start">
                 <img src="<?= base_url('img/produktestimoni.png') ?>" class="max-w-sm rounded-lg mb-6 lg:mr-24" />
                 <a href="<?= base_url('testimoni') ?>"
@@ -156,11 +156,12 @@
     <div class="flex items-center justify-center min-h-screen">
         <div class="bg-white p-6 rounded-lg shadow-lg w-96">
             <form id="orderForm" class="mt-4 relative">
-            <span class="close absolute top-0 right-0 mr-0 -mt-4 cursor-pointer sm:top-0 sm:right-0 sm:-mt-4 md:top-0 md:right-0 md:-mt-4 lg:top-0 lg:right-0 lg:-mt-4" onclick="closeModal2()">
-    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-    </svg>
-</span>
+                <span class="close absolute top-0 right-0 mr-0 -mt-4 cursor-pointer" onclick="closeModal()">
+                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
                 </span>
                 <label for="productName" class="block">Nama Produk Olahan</label>
                 <select name="productName" id="productName"
@@ -173,6 +174,7 @@
                 <input type="number" id="quantity" name="quantity"
                     class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black" required>
                 <div id="totalPrice" class="mt-2 text-black font-bold"></div>
+                <div id="stockMessage" class="mt-2 text-black font-bold"></div>
                 <button type="button" onclick="saveOrder()"
                     class="bg-gray-300 mt-4 px-4 py-2 rounded-lg font-semibold text-black hover:bg-maggotic duration-200 hover:scale-110 hover:text-white w-full">Pesan</button>
             </form>
@@ -231,6 +233,7 @@
                     <input type="number" id="quantity2" name="quantity"
                         class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black" required>
                     <div id="totalPrice2" class="mt-2 text-black font-bold"></div>
+                    <div id="modalStockMessage" class="mt-2 text-black font-bold"></div>
                     <button type="button" onclick="saveOrder2()"
                         class="bg-gray-300 mt-4 px-4 py-2 rounded-lg font-semibold text-black hover:bg-maggotic duration-200 hover:scale-110 hover:text-white w-full">Pesan</button>
                 </form>
@@ -238,9 +241,15 @@
         </div>
     </div>
 
+
 </div>
 
 <script>
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     var modal = document.getElementById('myModal');
     var btns = document.querySelectorAll('.btnOlahan');
@@ -248,6 +257,14 @@ document.addEventListener("DOMContentLoaded", function() {
     var productName = document.getElementById('productName');
     var quantity = document.getElementById('quantity');
     var totalPriceElement = document.getElementById('totalPrice');
+    var stockMessage = document.getElementById('stockMessage');
+
+    var stockData ={
+        "Got Meat": 120,
+        "RS Maggot Red": 0,
+        "Tepung Maggot": 100
+        
+    }
 
     btns.forEach(function(btn) {
         btn.onclick = function() {
@@ -269,53 +286,47 @@ document.addEventListener("DOMContentLoaded", function() {
         modal.classList.add("hidden");
     }
 
-    function updateTotalPrice() {
-        var price = 0;
-        var quantityValue = quantity.value;
-
-        if (productName.value === "Got Meat") {
-            price = 79000;
-        } else if (productName.value === "RS Maggot Red") {
-            price = 50000;
-        } else if (productName.value === "Tepung Maggot") {
-            price = 10000;
+    function updateStockMessage() {
+        var selectedProduct = productName.value;
+        var stock = stockData[selectedProduct];
+        if (stock > 0) {
+            stockMessage.textContent = 'Stock Tersedia: ' + stock;
+        } else {
+            stockMessage.textContent = 'Pupuk Maggot tidak tersedia';
         }
-
-        var totalPrice = price * quantityValue;
-        totalPriceElement.textContent = 'Total Harga: Rp.' + totalPrice;
     }
 
-    quantity.addEventListener('input', updateTotalPrice);
-    productName.addEventListener('change', updateTotalPrice);
+    productName.addEventListener('change', updateStockMessage);
 
     window.saveOrder = function() {
-        var productNameValue = productName.value;
-        var quantityValue = quantity.value;
-        var price = 0;
+        var selectedProduct = productName.value;
+        var quantityValue = parseInt(quantity.value);
+        var stock = stockData[selectedProduct];
 
-        if (productNameValue === "Got Meat") {
+        if (quantityValue <= stock) {
+            stockData[selectedProduct] -= quantityValue;
+            var totalPrice = calculateTotalPrice(selectedProduct, quantityValue);
+
+            var message = 'Halo, saya ingin memesan ' + quantityValue + ' ' + selectedProduct +
+                '. Total harga: Rp' + totalPrice;
+            window.open('https://wa.me/+6281391546240?text=' + encodeURIComponent(message), '_blank');
+
+            updateStockMessage();
+        } else {
+            alert('Jumlah pesanan melebihi stok yang tersedia.');
+        }
+    };
+
+    function calculateTotalPrice(productName, quantity) {
+        var price = 0;
+        if (productName === "Got Meat") {
             price = 79000;
-        } else if (productNameValue === "RS Maggot Red") {
+        } else if (productName === "RS Maggot Red") {
             price = 50000;
-        } else if (productNameValue === "Tepung Maggot") {
+        } else if (productName === "Tepung Maggot") {
             price = 10000;
         }
-
-        var totalPrice = price * quantityValue;
-
-        console.log('Product Name:', productNameValue);
-        console.log('Quantity:', quantityValue);
-        console.log('Total Price:', totalPrice);
-
-        localStorage.setItem('productName', productNameValue);
-        localStorage.setItem('quantity', quantityValue);
-        localStorage.setItem('totalPrice', totalPrice);
-
-        var message = 'Halo, saya ingin memesan ' + quantityValue + ' ' + productNameValue +
-            '. Total harga: Rp.' + totalPrice;
-        window.open('https://wa.me/+6281391546240?text=' + encodeURIComponent(message), '_blank');
-
-        closeModal();
+        return price * quantity;
     }
 });
 
@@ -324,70 +335,71 @@ document.addEventListener("DOMContentLoaded", function() {
     var modal2 = document.getElementById('myModal2');
     var productName2 = document.getElementById('productName2');
     var quantity2 = document.getElementById('quantity2');
-    var totalPriceElement2 = document.getElementById('totalPrice2');
+    var modalStockMessage = document.getElementById('modalStockMessage');
+
+    var stockData = {
+        "Fresh Maggot": 122,
+        "Maggot Kering": 0,
+        "Pupuk Maggot": 102
+    };
 
     function openModal2(selectedProduct) {
         productName2.value = selectedProduct;
         modal2.classList.remove("hidden");
-        updateTotalPrice2();
+        updateModalStockMessage2();
     }
 
     function closeModal2() {
         modal2.classList.add("hidden");
     }
 
-    function updateTotalPrice2() {
-        var price = 0;
-        var quantityValue = quantity2.value;
-
-        if (productName2.value === "Fresh Maggot") {
-            price = 3000000;
-        } else if (productName2.value === "Maggot Kering") {
-            price = 120000;
-        } else if (productName2.value === "Pupuk Maggot") {
-            price = 10000;
+    function updateModalStockMessage2() {
+        var selectedProduct = productName2.value;
+        var stock = stockData[selectedProduct];
+        if (stock > 0) {
+            modalStockMessage.textContent = 'Stock Tersedia: ' + stock;
+        } else {
+            modalStockMessage.textContent = 'Pupuk Maggot tidak tersedia';
         }
-
-        var totalPrice = price * quantityValue;
-        totalPriceElement2.textContent = 'Total Harga: Rp' + totalPrice.toLocaleString('id-ID');
     }
 
-    quantity2.addEventListener('input', updateTotalPrice2);
-    productName2.addEventListener('change', updateTotalPrice2);
+    productName2.addEventListener('change', updateModalStockMessage2);
 
     window.saveOrder2 = function() {
-        var productNameValue = productName2.value;
-        var quantityValue = quantity2.value;
-        var price = 0;
+        var selectedProduct = productName2.value;
+        var quantityValue = parseInt(quantity2.value);
+        var stock = stockData[selectedProduct];
 
-        if (productNameValue === "Fresh Maggot") {
-            price = 3000000;
-        } else if (productNameValue === "Maggot Kering") {
-            price = 120000;
-        } else if (productNameValue === "Pupuk Maggot") {
-            price = 10000;
+        if (quantityValue <= stock) {
+            stockData[selectedProduct] -= quantityValue;
+            var totalPrice = calculateTotalPrice2(selectedProduct, quantityValue);
+
+            var message = 'Halo, saya ingin memesan ' + quantityValue + ' ' + selectedProduct +
+                '. Total harga: Rp' + totalPrice;
+            window.open('https://wa.me/+6281391546240?text=' + encodeURIComponent(message), '_blank');
+
+            updateModalStockMessage2();
+        } else {
+            alert('Jumlah pesanan melebihi stok yang tersedia.');
         }
+    };
 
-        var totalPrice = price * quantityValue;
-
-        console.log('Product Name:', productNameValue);
-        console.log('Quantity:', quantityValue);
-        console.log('Total Price:', totalPrice);
-
-        localStorage.setItem('productName2', productNameValue);
-        localStorage.setItem('quantity2', quantityValue);
-        localStorage.setItem('totalPrice2', totalPrice);
-
-        var message = 'Halo, saya ingin memesan ' + quantityValue + ' ' + productNameValue +
-            '. Total harga: Rp' + totalPrice.toLocaleString('id-ID');
-        window.open('https://wa.me/+6281391546240?text=' + encodeURIComponent(message), '_blank');
-
-        closeModal2();
+    function calculateTotalPrice2(productName, quantity) {
+        var price = 0;
+        if (productName === "Fresh Maggot") {
+            price = 10000;
+        } else if (productName === "Maggot Kering") {
+            price = 20000;
+        } else if (productName === "Pupuk Maggot") {
+            price = 30000;
+        }
+        return price * quantity;
     }
 
     window.openModal2 = openModal2;
     window.closeModal2 = closeModal2;
 });
+
 </script>
 
 

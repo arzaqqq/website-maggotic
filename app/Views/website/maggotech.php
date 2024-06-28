@@ -24,7 +24,7 @@
 
 
                         
-                        <button class=" buttonPrice bg-gray-300 mt-5 px-20 py-3 rounded-lg font-semibold text-black text-center mx-auto hover:bg-maggotic duration-200 hover:scale-110 hover:text-white flex items-center justify-between w-full">
+                        <button class=" buttonPrice bg-gray-300 mt-5 px-20 py-3 rounded-lg font-semibold text-black text-center mx-auto hover:bg-maggotic duration-200 hover:scale-110 hover:text-white flex items-center justify-between w-full" data-product="Garvabin">
                             <div class="flex flex-col items-center w-full">
                                 <h4>Price</h4>
                                 <h4>Rp.3.000.000</h4>
@@ -45,7 +45,7 @@
                     <p class="text-center text-black mt-4 sm:mt-6 md:mt-10">
                         Magokits merupakan budidaya maggot non teknologi atau tradisional namun memiliki peluang untuk mendapatkan pendapatan tambahan yang berkelanjutan. Magokits hadir sebagai paket budidaya maggot yang lebih praktis dan hemat. Magokits menjadi sasaran untuk kamu sebagai pemula dalam membudidayakan maggot.
                     </p>
-                    <button class=" buttonPrice bg-gray-300 mt-5 px-20 py-3 rounded-lg font-semibold text-black text-center mx-auto hover:bg-maggotic duration-200 hover:scale-110 hover:text-white flex items-center justify-between w-full">
+                    <button class=" buttonPrice bg-gray-300 mt-5 px-20 py-3 rounded-lg font-semibold text-black text-center mx-auto hover:bg-maggotic duration-200 hover:scale-110 hover:text-white flex items-center justify-between w-full" data-product="Magokits">
                         <div class="flex flex-col items-center w-full">
                             <h4>Price</h4>
                             <h4>Rp.120.000</h4>
@@ -65,29 +65,30 @@
   </div>
 </div>
 <!-- Modal -->
-                <div id="myModal" class="fixed inset-0 z-10 hidden overflow-y-auto">
-                        <div class="flex items-center justify-center min-h-screen">
-                            <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-                            <form id="orderForm" class="mt-4 relative">
-                                <span class="absolute top-0 right-0 mr-0 -mt-4 cursor-pointer" onclick="closeModal()">
-                                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                                    </svg>
-                                </span>
-                                <!-- Form -->
-                            
-                                                <label for="productName" class="block">Nama Produk:</label>
-                                                <select id="productName" name="productName" class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black">
-                                                    <option value="Garvabin">Garvabin</option>
-                                                    <option value="Magokits">Magokits</option>
-                                                </select>
-                                                <label for="quantity" class="block mt-4">Jumlah:</label>
-                                                <input type="number" id="quantity" name="quantity" class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black" required>
-                                                <button type="button" onclick="saveOrder()" class="bg-gray-300 mt-4 px-4 py-2 rounded-lg font-semibold text-black hover:bg-maggotic duration-200 hover:scale-110 hover:text-white w-full">Pesan</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                 </div>
+<div id="myModal" class="fixed inset-0 z-10 hidden overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+            <form id="orderForm" class="mt-4 relative">
+                <span class="absolute top-0 right-0 mr-0 -mt-4 cursor-pointer close" onclick="closeModal()">
+                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </span>
+                <!-- Form -->
+                <label for="productName" class="block">Nama Produk:</label>
+                <select id="productName" name="productName" class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black">
+                    <option value="Garvabin">Garvabin</option>
+                    <option value="Magokits">Magokits</option>
+                </select>
+                <label for="quantity" class="block mt-4">Jumlah:</label>
+                <input type="number" id="quantity" name="quantity" class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black" required>
+                <div id="modalStockMessage1" class="mt-2 text-black font-bold"></div>
+                <button type="button" onclick="saveOrder()" class="bg-gray-300 mt-4 px-4 py-2 rounded-lg font-semibold text-black hover:bg-maggotic duration-200 hover:scale-110 hover:text-white w-full">Pesan</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 
                         <style>/* Style untuk tombol close */
                             /* Style untuk tombol close */
@@ -144,56 +145,89 @@ function toggleText() {
 }
 
 //JS ke WA
-var modal = document.getElementById("myModal");
-var btns = document.querySelectorAll(".buttonPrice");
-var span = document.getElementsByClassName("close")[0];
+document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById('myModal');
+    var btns = document.querySelectorAll('.buttonPrice');
+    var span = document.getElementsByClassName('close')[0];
+    var productName = document.getElementById('productName');
+    var quantity = document.getElementById('quantity');
+    var modalStockMessage1 = document.getElementById('modalStockMessage1');
 
-btns.forEach(function(btn) {
-    btn.onclick = function() {
-        modal.classList.remove("hidden");
-    }
-});
+    var stockData = {
+        "Garvabin": 5,
+        "Magokits": 10
+    };
 
-span.onclick = function() {
-    modal.classList.add("hidden");
-}
+    btns.forEach(function(btn) {
+        btn.onclick = function() {
+            var product = btn.getAttribute("data-product");
+            openModal(product);
+        };
+    });
 
-window.onclick = function(event) {
-    if (event.target == modal) {
+    span.onclick = function() {
+        modal.classList.add("hidden");
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.classList.add("hidden");
+        }
+    };
+
+    function closeModal() {
         modal.classList.add("hidden");
     }
-}
 
-function closeModal() {
-    modal.classList.add("hidden");
-}
-
-function saveOrder() {
-    var productName = document.getElementById('productName').value;
-    var quantity = document.getElementById('quantity').value;
-    var price = 0;
-
-    if (productName === "Garvabin") {
-        price = 3000000; // Harga untuk Garvabin
-    } else if (productName === "Magokits") {
-        price = 120000; // Harga untuk Magokits
+    function openModal(product) {
+        productName.value = product;
+        updateStockMessage();
+        modal.classList.remove("hidden");
     }
 
-    var totalPrice = price * quantity;
+    function updateStockMessage() {
+        var selectedProduct = productName.value;
+        var stock = stockData[selectedProduct];
+        if (stock > 0) {
+            modalStockMessage1.textContent = 'Stock Tersedia: ' + stock;
+        } else {
+            modalStockMessage1.textContent = 'Produk tidak tersedia';
+        }
+    }
 
-    console.log('Product Name:', productName);
-    console.log('Quantity:', quantity);
-    console.log('Total Price:', totalPrice);
+    productName.addEventListener('change', updateStockMessage);
 
-    localStorage.setItem('productName', productName);
-    localStorage.setItem('quantity', quantity);
-    localStorage.setItem('totalPrice', totalPrice);
-    
-    var message = 'Halo, saya ingin memesan ' + quantity + ' ' + productName + '. Total harga: Rp' + totalPrice;
-    window.open('https://wa.me/+6281391546240?text=' + encodeURIComponent(message), '_blank');
-    
-    closeModal();
-}
+    window.saveOrder = function() {
+        var selectedProduct = productName.value;
+        var quantityValue = parseInt(quantity.value);
+        var stock = stockData[selectedProduct];
+
+        if (quantityValue <= stock) {
+            stockData[selectedProduct] -= quantityValue;
+            var totalPrice = calculateTotalPrice(selectedProduct, quantityValue);
+
+            var message = 'Halo, saya ingin memesan ' + quantityValue + ' ' + selectedProduct +
+                '. Total harga: Rp' + totalPrice;
+            window.open('https://wa.me/+6281391546240?text=' + encodeURIComponent(message), '_blank');
+
+            updateStockMessage();
+        } else {
+            alert('Jumlah pesanan melebihi stok yang tersedia.');
+        }
+    };
+
+    function calculateTotalPrice(productName, quantity) {
+        var price = 0;
+        if (productName === "Garvabin") {
+            price = 3000000;
+        } else if (productName === "Magokits") {
+            price = 120000;
+        }
+        return price * quantity;
+    }
+
+    window.closeModal = closeModal;
+});
 
 
 
