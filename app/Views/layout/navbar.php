@@ -5,7 +5,7 @@
     }
 }
 </style>
-<nav class="text-white bg-maggotic py-3 px-6 flex items-center justify-between">
+<nav class="text-white bg-maggotic py-3 px-6 flex items-center justify-between fixed top-0 left-0 w-full z-50">
 
     <div class="flex">
         <a class="font-bold text-2xl tracking-tight me-5" href="#">Maggotic</a>

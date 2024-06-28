@@ -152,9 +152,12 @@
         <!-- ... produk cards ... -->
 
         <!-- Modal -->
-        <div id="myModal" class="fixed inset-0 z-10 hidden overflow-y-auto">
+        <div id="myModal" class="fixed inset-0 z-10 hidden overflow-y-auto bg-black bg-opacity-50">
+            <!-- Added background opacity -->
             <div class="flex items-center justify-center min-h-screen">
-                <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+                <div class="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3 relative">
+                    <!-- Adjusted width for responsiveness -->
+                    <!-- Close button -->
                     <span class="close absolute top-0 right-0 mr-4 mt-4 cursor-pointer" onclick="closeModal()">
                         <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -182,62 +185,68 @@
                 </div>
             </div>
         </div>
+
+
     </div>
+</div>
 
 
 
 
-    <style>
-    .hero {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+<style>
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
     .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row-reverse;
     }
+}
+</style>
 
-    @media (min-width: 1024px) {
-        .hero-content {
-            flex-direction: row-reverse;
-        }
-    }
-    </style>
+<!--Modal 2-->
+<div id="myModal2" class="fixed inset-0 z-10 hidden overflow-y-auto bg-black bg-opacity-50">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3 relative">
+            <!-- Close button -->
+            <span class="close absolute top-0 right-0 mr-4 mt-4 cursor-pointer" onclick="closeModal2()">
+                <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </span>
 
-    <!--Modal 2-->
-    <div id="myModal2" class="fixed inset-0 z-10 hidden overflow-y-auto">
-        <div class="flex items-center justify-center min-h-screen">
-            <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-                <span class="close absolute top-0 right-0 mr-4 mt-4 cursor-pointer" onclick="closeModal2()">
-                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </span>
-
-                <!-- Form Produk Olahan -->
-                <form id="orderForm2" class="mt-4">
-                    <label for="productName2" class="block">Nama Produk Olahan</label>
-                    <select name="productName" id="productName2"
-                        class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black">
-                        <option value="Fresh Maggot">Fresh Maggot</option>
-                        <option value="Maggot Kering">Maggot Kering</option>
-                        <option value="Pupuk Maggot">Pupuk Maggot</option>
-                    </select>
-                    <label for="quantity2" class="block mt-4">Jumlah :</label>
-                    <input type="number" id="quantity2" name="quantity"
-                        class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black" required>
-                    <div id="totalPrice2" class="mt-2 text-black font-bold"></div>
-                    <button type="button" onclick="saveOrder2()"
-                        class="bg-gray-300 mt-4 px-4 py-2 rounded-lg font-semibold text-black hover:bg-maggotic duration-200 hover:scale-110 hover:text-white w-full">Pesan</button>
-                </form>
-            </div>
+            <!-- Form Produk Olahan -->
+            <form id="orderForm2" class="mt-4">
+                <label for="productName2" class="block">Nama Produk Olahan</label>
+                <select name="productName2" id="productName2"
+                    class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black">
+                    <option value="Fresh Maggot">Fresh Maggot</option>
+                    <option value="Maggot Kering">Maggot Kering</option>
+                    <option value="Pupuk Maggot">Pupuk Maggot</option>
+                </select>
+                <label for="quantity2" class="block mt-4">Jumlah :</label>
+                <input type="number" id="quantity2" name="quantity2"
+                    class="border rounded-lg px-3 py-2 mt-1 w-full bg-white text-black" required>
+                <div id="totalPrice2" class="mt-2 text-black font-bold"></div>
+                <button type="button" onclick="saveOrder2()"
+                    class="bg-gray-300 mt-4 px-4 py-2 rounded-lg font-semibold text-black hover:bg-maggotic duration-200 hover:scale-110 hover:text-white w-full">Pesan</button>
+            </form>
         </div>
     </div>
+</div>
+
+
 
 </div>
 
