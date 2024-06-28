@@ -156,12 +156,11 @@
     <div class="flex items-center justify-center min-h-screen">
         <div class="bg-white p-6 rounded-lg shadow-lg w-96">
             <form id="orderForm" class="mt-4 relative">
-                <span class="close absolute top-0 right-0 mr-0 -mt-4 cursor-pointer" onclick="closeModal()">
-                    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
+            <span class="close absolute top-0 right-0 mr-0 -mt-4 cursor-pointer sm:top-0 sm:right-0 sm:-mt-4 md:top-0 md:right-0 md:-mt-4 lg:top-0 lg:right-0 lg:-mt-4" onclick="closeModal2()">
+    <svg class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+    </svg>
+</span>
                 </span>
                 <label for="productName" class="block">Nama Produk Olahan</label>
                 <select name="productName" id="productName"
